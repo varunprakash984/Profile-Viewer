@@ -1,0 +1,479 @@
+from tkinter import *
+from tkinter import messagebox
+from tkinter import filedialog
+from PIL import ImageTk, Image
+import webbrowser
+
+root=Tk()
+root.geometry("700x700")
+root.title("ZAAHIR")
+path=r"984.jpg"
+image_sel=ImageTk.PhotoImage(Image.open(path))
+L1=Label(root, bg="black", image=image_sel, height=700, width=700).place(x=0, y=0)
+
+L2=Label(root,bg="black", fg="white", text="ZAAHiR", font=("ariel",40)).place(x=50, y=100)
+
+def sharad():
+    root.destroy()
+    sharad1 = Tk()
+    sharad1.title("Sharad Verma")
+    sharad1.geometry("700x700")
+    path1 = r"C:\Users\BHARAT PRAKASH\Desktop\sharad.jpg"
+    iSharad = ImageTk.PhotoImage(Image.open(path1))
+    s1 = Label(sharad1, bg="black", image=iSharad, height=700, width=700).place(x=0, y=0)
+    sL1=Label(sharad1, bg="black", fg= "white", font=("ariel",20), text="Director Sahab-Sharad Verma").place(x=300, y=10)
+    sharad1.config(bg="black")
+
+    sl2=Label(sharad1, bg="white", fg="black",font=("ariel",20), text="LOGIN").place(x=300,y=400)
+    sl3=Label(sharad1, bg="white", fg="black",font=("ariel",20), text="PASSWORD").place(x=222,y=450)
+    sl4=Label(sharad1, bg="white", fg="black",font=("ariel",15), text="sharadverma123@gmail.com").place(x=400,y=250)
+    sl5=Label(sharad1, bg="white", fg="black",font=("ariel",15), text="09874561230").place(x=420,y=290)
+
+
+    se2=Entry(sharad1, font=("ariel", 20), width=10)
+    se2.place(x=400, y=400)
+    se3=Entry(sharad1, font=("ariel", 20), width=10)
+    se3.place(x=400, y=450)
+
+    def sharad789():
+        gs1=se2.get()
+        gs2=se3.get()
+        if gs1=="qwerty":
+            if gs2=="12345":
+                messagebox.showinfo(title="login", message="logged in")
+            else:
+                messagebox.showinfo(title="login", message="incorrect password")
+        else:
+            messagebox.showinfo(title="login", message="incorrect id")
+    # sharad789()
+    sb1=Button(sharad1, text="login", bg="white", fg="black",command=sharad789)
+    sb1.place(x=500, y=550)
+
+    def qwe():
+        webbrowser.open(f"https://www.facebook.com/sharad.verma.549")
+
+    button = Button(sharad1, bg = "black", fg = "white", text="profile", relief = SUNKEN, bd = 6, command = qwe).place(x=600, y=600)
+
+    sharad1.mainloop()
+
+def piyush():
+    root.destroy()
+    piyush1 = Tk()
+    piyush1.title("Piyush Shukla")
+    piyush1.geometry("700x700")
+    path1 = r"C:\Users\BHARAT PRAKASH\Desktop\shukla.jpg"
+    ipiyush = ImageTk.PhotoImage(Image.open(path1))
+    s1 = Label(piyush1, bg="black", image=ipiyush, height=700, width=700).place(x=0, y=0)
+    sL1=Label(piyush1, bg="black", fg= "white", font=("ariel",20), text="Writer sahab- Piyush Shukla").place(x=300, y=10)
+    piyush1.config(bg="black")
+
+    sl2=Label(piyush1, bg="white", fg="black",font=("ariel",20), text="LOGIN").place(x=300,y=400)
+    sl3=Label(piyush1, bg="white", fg="black",font=("ariel",20), text="PASSWORD").place(x=222,y=450)
+    sl4=Label(piyush1, bg="white", fg="black",font=("ariel",15), text="piyush123@gmail.com").place(x=400,y=250)
+    sl5=Label(piyush1, bg="white", fg="black",font=("ariel",15), text="09871111120").place(x=420,y=290)
+
+
+    se2=Entry(piyush1, font=("ariel", 20), width=10)
+    se2.place(x=400, y=400)
+    se3=Entry(piyush1, font=("ariel", 20), width=10)
+    se3.place(x=400, y=450)
+
+    def piyush789():
+        gs1=se2.get()
+        gs2=se3.get()
+        if gs1=="qwerty":
+            if gs2=="12345":
+                messagebox.showinfo(title="login", message="logged in")
+            else:
+                messagebox.showinfo(title="login", message="incorrect password")
+        else:
+            messagebox.showinfo(title="login", message="incorrect id")
+    sb1=Button(piyush1, text="login", bg="white", fg="black",command=piyush789)
+    sb1.place(x=500, y=550)
+
+    def qwe():
+        webbrowser.open(f"https://www.facebook.com/piyush.shukla.71697")
+
+    button = Button(piyush1, bg = "black", fg = "white", relief = SUNKEN,text="profile", bd = 6, command = qwe).place(x=600, y=600)
+
+
+    piyush1.mainloop()
+
+
+def stuti():
+    root.destroy()
+    stuti1 = Tk()
+    stuti1.title("Stuti Juyal")
+    stuti1.geometry("700x700")
+    path1 = r"C:\Users\BHARAT PRAKASH\Desktop\stuti.jpg"
+    istuti = ImageTk.PhotoImage(Image.open(path1))
+    s1 = Label(stuti1, bg="black", image=istuti, height=700, width=700).place(x=0, y=0)
+    sL1=Label(stuti1, bg="black", fg= "white", font=("ariel",20), text="Rocket Girl-Stuti Juyal").place(x=300, y=10)
+    stuti1.config(bg="black")
+
+    sl2=Label(stuti1, bg="white", fg="black",font=("ariel",20), text="LOGIN").place(x=300,y=400)
+    sl3=Label(stuti1, bg="white", fg="black",font=("ariel",20), text="PASSWORD").place(x=222,y=450)
+    sl4=Label(stuti1, bg="white", fg="black",font=("ariel",15), text="stutijuyal@gmail.com").place(x=400,y=250)
+    sl5=Label(stuti1, bg="white", fg="black",font=("ariel",15), text="09874578789").place(x=420,y=290)
+
+
+    se2=Entry(stuti1, font=("ariel", 20), width=10)
+    se2.place(x=400, y=400)
+    se3=Entry(stuti1, font=("ariel", 20), width=10)
+    se3.place(x=400, y=450)
+
+    def stuti789():
+        gs1=se2.get()
+        gs2=se3.get()
+        if gs1=="qwerty":
+            if gs2=="12345":
+                messagebox.showinfo(title="login", message="logged in")
+            else:
+                messagebox.showinfo(title="login", message="incorrect password")
+        else:
+            messagebox.showinfo(title="login", message="incorrect id")
+    # sharad789()
+    sb1=Button(stuti1, text="login", bg="white", fg="black",command=stuti789)
+    sb1.place(x=500, y=550)
+
+    def qwe():
+        webbrowser.open(f"https://www.facebook.com/varun.prakash.1466126")
+
+    button = Button(stuti1, bg = "black", fg = "white",text="profile", relief = SUNKEN, bd = 6, command = qwe).place(x=600, y=600)
+
+
+    stuti1.mainloop()
+
+
+def mota():
+    root.destroy()
+    mota1 = Tk()
+    mota1.title("Shreyans Mittal")
+    mota1.geometry("700x700")
+    path1 = r"C:\Users\BHARAT PRAKASH\Desktop\mota.jpg"
+    imota = ImageTk.PhotoImage(Image.open(path1))
+    s1 = Label(mota1, bg="black", image=imota, height=700, width=700).place(x=0, y=0)
+    sL1=Label(mota1, bg="black", fg= "white", font=("ariel",20), text="Engineer 420-Shreyans Mittal").place(x=300, y=10)
+    mota1.config(bg="black")
+
+    sl2=Label(mota1, bg="white", fg="black",font=("ariel",20), text="LOGIN").place(x=300,y=400)
+    sl3=Label(mota1, bg="white", fg="black",font=("ariel",20), text="PASSWORD").place(x=222,y=450)
+    sl4=Label(mota1, bg="white", fg="black",font=("ariel",15), text="shreyansh@gmail.com").place(x=400,y=250)
+    sl5=Label(mota1, bg="white", fg="black",font=("ariel",15), text="09874564235").place(x=420,y=290)
+
+
+    se2=Entry(mota1, font=("ariel", 20), width=10)
+    se2.place(x=400, y=400)
+    se3=Entry(mota1, font=("ariel", 20), width=10)
+    se3.place(x=400, y=450)
+
+    def mota789():
+        gs1=se2.get()
+        gs2=se3.get()
+        if gs1=="qwerty":
+            if gs2=="12345":
+                messagebox.showinfo(title="login", message="logged in")
+            else:
+                messagebox.showinfo(title="login", message="incorrect password")
+        else:
+            messagebox.showinfo(title="login", message="incorrect id")
+    # sharad789()
+    sb1=Button(mota1, text="login", bg="white", fg="black",command=mota789)
+    sb1.place(x=500, y=550)
+
+    def qwe():
+        webbrowser.open(f"https://www.facebook.com/shreyans.mittal.9")
+
+    button = Button(mota1, bg = "black", fg = "white", relief = SUNKEN, text="profile", bd = 6, command = qwe).place(x=600, y=600)
+
+
+    mota1.mainloop()
+
+
+def varun():
+    root.destroy()
+    varun1 = Tk()
+    varun1.title("Varun Prakash")
+    varun1.geometry("700x700")
+    path1 = r"C:\Users\BHARAT PRAKASH\Desktop\varun.jpg"
+    ivarun = ImageTk.PhotoImage(Image.open(path1))
+    s1 = Label(varun1, bg="black", image=ivarun, height=700, width=700).place(x=0, y=0)
+    sL1=Label(varun1, bg="black", fg= "white", font=("ariel",20), text="Double-Varun Prakasj").place(x=300, y=10)
+    varun1.config(bg="black")
+
+    sl2=Label(varun1, bg="white", fg="black",font=("ariel",20), text="LOGIN").place(x=300,y=430)
+    sl3=Label(varun1, bg="white", fg="black",font=("ariel",20), text="PASSWORD").place(x=222,y=480)
+    sl4=Label(varun1, bg="white", fg="black",font=("ariel",15), text="varunprakash984@gmail.com").place(x=400,y=130)
+    sl5=Label(varun1, bg="white", fg="black",font=("ariel",15), text="08459810554").place(x=420,y=170)
+
+
+    se2=Entry(varun1, font=("ariel", 20), width=10)
+    se2.place(x=400, y=430)
+    se3=Entry(varun1, font=("ariel", 20), width=10)
+    se3.place(x=400, y=480)
+
+    def varun789():
+        gs1=se2.get()
+        gs2=se3.get()
+        if gs1=="qwerty":
+            if gs2=="12345":
+                messagebox.showinfo(title="login", message="logged in")
+            else:
+                messagebox.showinfo(title="login", message="incorrect password")
+        else:
+            messagebox.showinfo(title="login", message="incorrect id")
+    # sharad789()
+    sb1=Button(varun1, text="login", bg="white", fg="black",command=varun789)
+    sb1.place(x=500, y=550)
+
+    def qwe():
+        webbrowser.open(f"https://www.facebook.com/varun.prakash.1466126")
+
+    button = Button(varun1,text="profile", bg = "black", fg = "white", relief = SUNKEN, bd = 6, command = qwe).place(x=600, y=600)
+
+
+    varun1.mainloop()
+
+
+def avinash():
+    root.destroy()
+    avinash1 = Tk()
+    avinash1.title("Avinah Bisht")
+    avinash1.geometry("700x700")
+    path1 = r"C:\Users\BHARAT PRAKASH\Desktop\avinash.jpg"
+    iavinash = ImageTk.PhotoImage(Image.open(path1))
+    s1 = Label(avinash1, bg="black", image=iavinash, height=700, width=700).place(x=0, y=0)
+    sL1=Label(avinash1, bg="black", fg= "white", font=("ariel",20), text="Lead-Avinash Bisht").place(x=300, y=10)
+    avinash1.config(bg="black")
+
+    sl2=Label(avinash1, bg="white", fg="black",font=("ariel",20), text="LOGIN").place(x=300,y=400)
+    sl3=Label(avinash1, bg="white", fg="black",font=("ariel",20), text="PASSWORD").place(x=222,y=450)
+    sl4=Label(avinash1, bg="white", fg="black",font=("ariel",15), text="avinashbisht@gmail.com").place(x=400,y=250)
+    sl5=Label(avinash1, bg="white", fg="black",font=("ariel",15), text="09877894652").place(x=420,y=290)
+
+
+    se2=Entry(avinash1, font=("ariel", 20), width=10)
+    se2.place(x=400, y=400)
+    se3=Entry(avinash1, font=("ariel", 20), width=10)
+    se3.place(x=400, y=450)
+
+    def avinash789():
+        gs1=se2.get()
+        gs2=se3.get()
+        if gs1=="qwerty":
+            if gs2=="12345":
+                messagebox.showinfo(title="login", message="logged in")
+            else:
+                messagebox.showinfo(title="login", message="incorrect password")
+        else:
+            messagebox.showinfo(title="login", message="incorrect id")
+    # sharad789()
+    sb1=Button(avinash1, text="login", bg="white", fg="black",command=avinash789)
+    sb1.place(x=500, y=550)
+
+    def qwe():
+        webbrowser.open(f"https://www.facebook.com/AvinashAndSoccer")
+
+    button = Button(avinash1, text="profile", bg = "black", fg = "white", relief = SUNKEN, bd = 6, command = qwe).place(x=600, y=600)
+
+
+    avinash1.mainloop()
+
+
+def pranjal():
+    root.destroy()
+    pranjal1 = Tk()
+    pranjal1.title("Pranjal Mittal")
+    pranjal1.geometry("700x700")
+    path1 = r"C:\Users\BHARAT PRAKASH\Desktop\pranjal.jpg"
+    ipranjal = ImageTk.PhotoImage(Image.open(path1))
+    s1 = Label(pranjal1, bg="black", image=ipranjal, height=700, width=700).place(x=0, y=0)
+    sL1=Label(pranjal1, bg="black", fg= "white", font=("ariel",20), text="double another-Pranjal Mittal").place(x=300, y=10)
+    pranjal1.config(bg="black")
+
+    sl2=Label(pranjal1, bg="white", fg="black",font=("ariel",20), text="LOGIN").place(x=300,y=400)
+    sl3=Label(pranjal1, bg="white", fg="black",font=("ariel",20), text="PASSWORD").place(x=222,y=450)
+    sl4=Label(pranjal1, bg="white", fg="black",font=("ariel",15), text="pranjal@gmail.com").place(x=400,y=250)
+    sl5=Label(pranjal1, bg="white", fg="black",font=("ariel",15), text="09874468789").place(x=420,y=290)
+
+
+    se2=Entry(pranjal1, font=("ariel", 20), width=10)
+    se2.place(x=400, y=400)
+    se3=Entry(pranjal1, font=("ariel", 20), width=10)
+    se3.place(x=400, y=450)
+
+    def pranjal789():
+        gs1=se2.get()
+        gs2=se3.get()
+        if gs1=="qwerty":
+            if gs2=="12345":
+                messagebox.showinfo(title="login", message="logged in")
+            else:
+                messagebox.showinfo(title="login", message="incorrect password")
+        else:
+            messagebox.showinfo(title="login", message="incorrect id")
+    # sharad789()
+    sb1=Button(pranjal1, text="login", bg="white", fg="black",command=stuti789)
+    sb1.place(x=500, y=550)
+
+    def qwe():
+        webbrowser.open(f"https://www.facebook.com/varun.prakash.1466126")
+
+    button = Button(pranjal1, text="profile", bg = "black", fg = "white", relief = SUNKEN, bd = 6, command = qwe).place(x=600, y=600)
+
+
+    pranjal1.mainloop()
+
+
+def khushboo():
+    root.destroy()
+    khushboo1 = Tk()
+    khushboo1.title("Khushboo Sharma")
+    khushboo1.geometry("700x700")
+    path1 = r"C:\Users\BHARAT PRAKASH\Desktop\khushboo.jpg"
+    ikhushboo = ImageTk.PhotoImage(Image.open(path1))
+    s1 = Label(khushboo1, bg="black", image=ikhushboo, height=700, width=700).place(x=0, y=0)
+    sL1=Label(khushboo1, bg="black", fg= "white", font=("ariel",20), text="couple of zaahir-Khushboo Sharma").place(x=300, y=10)
+    khushboo1.config(bg="black")
+
+    sl2=Label(khushboo1, bg="white", fg="black",font=("ariel",20), text="LOGIN").place(x=300,y=400)
+    sl3=Label(khushboo1, bg="white", fg="black",font=("ariel",20), text="PASSWORD").place(x=222,y=450)
+    sl4=Label(khushboo1, bg="white", fg="black",font=("ariel",15), text="khushbooshamrma@gmail.com").place(x=400,y=150)
+    sl5=Label(khushboo1, bg="white", fg="black",font=("ariel",15), text="09898785621").place(x=420,y=200)
+
+
+    se2=Entry(khushboo1, font=("ariel", 20), width=10)
+    se2.place(x=400, y=400)
+    se3=Entry(khushboo1, font=("ariel", 20), width=10)
+    se3.place(x=400, y=450)
+
+    def khushboo789():
+        gs1=se2.get()
+        gs2=se3.get()
+        if gs1=="qwerty":
+            if gs2=="12345":
+                messagebox.showinfo(title="login", message="logged in")
+            else:
+                messagebox.showinfo(title="login", message="incorrect password")
+        else:
+            messagebox.showinfo(title="login", message="incorrect id")
+    # sharad789()
+    sb1=Button(khushboo1, text="login", bg="white", fg="black",command=khushboo789)
+    sb1.place(x=500, y=550)
+
+    def qwe():
+        webbrowser.open(f"https://www.facebook.com/varun.prakash.1466126")
+
+    button = Button(khushboo1, bg = "black",text="profile", fg = "white", relief = SUNKEN, bd = 6, command = qwe).place(x=600, y=600)
+
+
+    khushboo1.mainloop()
+
+
+def chirag():
+    root.destroy()
+    chirag1 = Tk()
+    chirag1.title("Chirag Goyal")
+    chirag1.geometry("700x700")
+    path1 = r"C:\Users\BHARAT PRAKASH\Desktop\chirag.jpg"
+    ichirag = ImageTk.PhotoImage(Image.open(path1))
+    s1 = Label(chirag1, bg="black", image=ichirag, height=700, width=700).place(x=0, y=0)
+    sL1=Label(chirag1, bg="black", fg= "white", font=("ariel",20), text="comedian-Chirag Goyal").place(x=300, y=10)
+    chirag1.config(bg="black")
+
+    sl2=Label(chirag1, bg="white", fg="black",font=("ariel",20), text="LOGIN").place(x=300,y=400)
+    sl3=Label(chirag1, bg="white", fg="black",font=("ariel",20), text="PASSWORD").place(x=222,y=450)
+    sl4=Label(chirag1, bg="white", fg="black",font=("ariel",15), text="chiraggoyal@gmail.com").place(x=400,y=250)
+    sl5=Label(chirag1, bg="white", fg="black",font=("ariel",15), text="09874412345").place(x=420,y=290)
+
+
+    se2=Entry(chirag1, font=("ariel", 20), width=10)
+    se2.place(x=400, y=400)
+    se3=Entry(chirag1, font=("ariel", 20), width=10)
+    se3.place(x=400, y=450)
+
+    def chiraj789():
+        gs1=se2.get()
+        gs2=se3.get()
+        if gs1=="qwerty":
+            if gs2=="12345":
+                messagebox.showinfo(title="login", message="logged in")
+            else:
+                messagebox.showinfo(title="login", message="incorrect password")
+        else:
+            messagebox.showinfo(title="login", message="incorrect id")
+    # sharad789()
+    sb1=Button(chirag1, text="login", bg="white", fg="black",command=chiraj789)
+    sb1.place(x=500, y=550)
+
+    def qwe():
+        webbrowser.open(f"https://www.facebook.com/chirag.goyal.16100")
+
+    button = Button(chirag1, text="profile", bg = "black", fg = "white", relief = SUNKEN, bd = 6, command = qwe).place(x=600, y=600)
+
+
+    chirag1.mainloop()
+
+
+def manik():
+    root.destroy()
+    manik1 = Tk()
+    manik1.title("Manik Sharma")
+    manik1.geometry("700x700")
+    path1 = r"C:\Users\BHARAT PRAKASH\Desktop\manik.jpg"
+    imanik = ImageTk.PhotoImage(Image.open(path1))
+    s1 = Label(manik1, bg="black", image=imanik, height=700, width=700).place(x=0, y=0)
+    sL1=Label(manik1, bg="black", fg= "white", font=("ariel",20), text="the gunda-Manik Sharma").place(x=300, y=10)
+    manik1.config(bg="black")
+
+    sl2=Label(manik1, bg="white", fg="black",font=("ariel",20), text="LOGIN").place(x=300,y=400)
+    sl3=Label(manik1, bg="white", fg="black",font=("ariel",20), text="PASSWORD").place(x=222,y=450)
+    sl4=Label(manik1, bg="white", fg="black",font=("ariel",15), text="maniksharma@gmail.com").place(x=400,y=250)
+    sl5=Label(manik1, bg="white", fg="black",font=("ariel",15), text="09876543210").place(x=420,y=290)
+
+
+    se2=Entry(manik1, font=("ariel", 20), width=10)
+    se2.place(x=400, y=400)
+    se3=Entry(manik1, font=("ariel", 20), width=10)
+    se3.place(x=400, y=450)
+
+    def manik789():
+        gs1=se2.get()
+        gs2=se3.get()
+        if gs1=="qwerty":
+            if gs2=="12345":
+                messagebox.showinfo(title="login", message="logged in")
+            else:
+                messagebox.showinfo(title="login", message="incorrect password")
+        else:
+            messagebox.showinfo(title="login", message="incorrect id")
+    # sharad789()
+    sb1=Button(manik1, text="login", bg="white", fg="black",command=manik789)
+    sb1.place(x=500, y=550)
+
+    def qwe():
+        webbrowser.open(f"https://www.facebook.com/profile.php?id=100004629649185")
+
+    button = Button(manik1, text="profile",bg = "black", fg = "white", relief = SUNKEN, bd = 6, command = qwe).place(x=600, y=600)
+
+
+    manik1.mainloop()
+
+
+
+
+
+#buttons
+b1=Button(root, bg="white", fg="black", relief=SUNKEN, text="Sharad Verma", font=("ariel,20"), command=sharad).place(x=100, y=200)
+b2=Button(root, bg="white", fg="black", relief=SUNKEN, text="Piyush Shukla", font=("ariel,20"), command=piyush).place(x=100, y=240)
+b3=Button(root, bg="white", fg="black", relief=SUNKEN, text="Stuti Juyal", font=("ariel,20"),command=stuti).place(x=100, y=280)
+b4=Button(root, bg="white", fg="black", relief=SUNKEN, text="Shreyans Mittal", font=("ariel,20"),command=mota).place(x=100, y=320)
+b5=Button(root, bg="white", fg="black", relief=SUNKEN, text="Varun Prakash", font=("ariel,20"),command=varun).place(x=100, y=360)
+b6=Button(root, bg="white", fg="black", relief=SUNKEN, text="Avinash Bisht", font=("ariel,20"),command=avinash).place(x=400, y=200)
+b7=Button(root, bg="white", fg="black", relief=SUNKEN, text="Pranjal Mittal", font=("ariel,20"),command=pranjal).place(x=400, y=240)
+b8=Button(root, bg="white", fg="black", relief=SUNKEN, text="Khushboo Sharma", font=("ariel,20"),command=khushboo).place(x=400, y=280)
+b9=Button(root, bg="white", fg="black", relief=SUNKEN, text="Chirag Goyal", font=("ariel,20"),command=chirag).place(x=400, y=320)
+b10=Button(root, bg="white", fg="black", relief=SUNKEN, text="Manik Sharma", font=("ariel,20"),command=manik).place(x=400, y=360)
+
+
+root.mainloop()
